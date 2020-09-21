@@ -1440,9 +1440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 105fd0ce514694eaaba018683e15039a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  startingHealth: 10
-  currentHealth: 0
+  maxHealth: 3
+  startingHealth: 3
   hitSound: {fileID: 0}
   deathSound: {fileID: 0}
   hitEffect: {fileID: 0}
@@ -1487,6 +1486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invincibleTime: 3
+  blinkSpeed: 0.1
 --- !u!1 &971811220
 GameObject:
   m_ObjectHideFlags: 0

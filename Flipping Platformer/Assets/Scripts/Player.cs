@@ -6,31 +6,23 @@ public class Player : MonoBehaviour
 {
 
     Health health;
-    //int healthLastFrame;
+    SpriteRenderer spriteRenderer;
     [SerializeField] float invincibleTime = 3f;
+    [SerializeField] float blinkSpeed = 0.1f;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         health = GetComponent<Health>();
-        //healthLastFrame = health.GetCurrentHealth();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (health.GetCurrentHealth() <= 0)
         {
             PlayerHasDied();
         }
-
-        //if (health.GetCurrentHealth() < healthLastFrame)
-        //{
-        //    Debug.Log("trying invinability");
-        //    health.InvincibleManager(invincibleTime);
-        //}
-
-        //healthLastFrame = health.GetCurrentHealth();
     }
 
     private void PlayerHasDied()
@@ -40,7 +32,26 @@ public class Player : MonoBehaviour
 
     public void PlayerWasHit()
     {
-        Debug.Log("trying invinability");
         health.StartInvincible(invincibleTime);
+        StartCoroutine(BlinkingManager());
+    }
+
+    private IEnumerator BlinkingManager()
+    {
+        Coroutine blinking = StartCoroutine(Blink());
+        yield return new WaitForSeconds(invincibleTime);
+        StopCoroutine(blinking);
+        spriteRenderer.enabled = true;
+    }
+
+    private IEnumerator Blink()
+    {
+        while (true)
+        {
+            spriteRenderer.enabled = false;
+            yield return new WaitForSeconds(blinkSpeed);
+            spriteRenderer.enabled = true;
+            yield return new WaitForSeconds(blinkSpeed);
+        }
     }
 }

@@ -1,30 +1,24 @@
 ﻿<Properties StartupConfiguration="{D722EB01-1C64-8A96-373B-09EAF0F10E1E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Health.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerAnimation.cs">
     <Files>
       <File FileName="Assets/Scripts/Castle.cs" Line="82" Column="1" />
-      <File FileName="Assets/Scripts/CameraFollow.cs" Line="41" Column="35" />
-      <File FileName="Assets/Scripts/FlipTigger.cs" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/FlipEffect.cs" Line="22" Column="33" />
-      <File FileName="Assets/Scripts/Crystal.cs" Line="8" Column="1" />
-      <File FileName="Assets/Scripts/CharacterMovement.cs" Line="63" Column="5" />
-      <File FileName="Assets/Scripts/Flux.cs" Line="10" Column="35" />
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="47" Column="40" />
-      <File FileName="Assets/Scripts/Health.cs" Line="30" Column="1" />
-      <File FileName="Assets/Scripts/HealthDisplay.cs" Line="28" Column="53" />
-      <File FileName="Assets/Scripts/DamageDealer.cs" Line="16" Column="44" />
-      <File FileName="Assets/Scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CameraFollow.cs" />
+      <File FileName="Assets/Scripts/FlipTigger.cs" />
+      <File FileName="Assets/Scripts/FlipEffect.cs" />
+      <File FileName="Assets/Scripts/Crystal.cs" />
+      <File FileName="Assets/Scripts/Flux.cs" />
+      <File FileName="Assets/Scripts/LevelManager.cs" />
+      <File FileName="Assets/Scripts/Health.cs" />
+      <File FileName="Assets/Scripts/HealthDisplay.cs" />
+      <File FileName="Assets/Scripts/DamageDealer.cs" Line="15" Column="10" />
+      <File FileName="Assets/Scripts/Player.cs" Line="34" Column="6" />
+      <File FileName="Assets/Scripts/PlayerAnimation.cs" Line="84" Column="10" />
+      <File FileName="Assets/Scripts/CharacterMovement.cs" Line="23" Column="31" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Flipping Platformer" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a19b7b35-fb11-4f4f-864c-1d941b89a520" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8006ea5b-a036-4d02-acbb-cd617b6cb43a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

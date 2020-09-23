@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
 
     [SerializeField] int maxHealth = 1;
     [SerializeField] int startingHealth = 1;
-    [SerializeField] int currentHealth;
+    int currentHealth;
 
     bool canBeHit = true;
 
@@ -99,10 +99,8 @@ public class Health : MonoBehaviour
     public IEnumerator ObjectIsInvincible(float timeInvincible)
     {
         canBeHit = false;
-        Debug.Log("invincable");
         yield return new WaitForSeconds(timeInvincible);
         canBeHit = true;
-        Debug.Log("can be hit");
     }
 
 
